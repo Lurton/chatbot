@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "<5"
+django-extensions = "*"
+django-widget-tweaks = "*"
+django-storages = "*"
+django-oauth-toolkit = "*"
+django-admin-env-notice = "*"
+djangorestframework = "*"
+coverage = "*"
+pre-commit = "*"
+requests = "*"
+python-dateutil = "*"
+openpyxl = "*"
+pillow = "*"
+
+[dev-packages]
+
+[requires]
