@@ -20,6 +20,9 @@ class ChatbotView(APIView):
         # Update user state based on the received message
 
         # Example: Update state based on a simple condition
+        greetings = ["hello", "greetings", "hi", "hey"]
+        questions = ["how are you", "howzit", ""]
+
         if "hello" in message.lower():
             user.current_state = "greeting"
         elif "bye" in message.lower():
