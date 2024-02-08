@@ -4,9 +4,8 @@ from django_extensions.db.models import TimeStampedModel
 
 # Create your models here.
 
-
 class User(models.Model):
-    session_id = models.CharField(max_length=255, unique=True)
+    session_name = models.CharField(max_length=255, unique=True)
     current_state = models.CharField(max_length=255)
 
 
@@ -17,4 +16,5 @@ class Step(models.Model):
 
 class Log(TimeStampedModel):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    input = models.CharField(max_length=255)
     response = models.CharField(max_length=255)
