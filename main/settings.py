@@ -30,6 +30,8 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+COVERAGE_REPORT_HTML_OUTPUT_DIR = 'coverage_report'
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -38,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'chatbot'
+    'chatbot.apps.ChatbotConfig'
 ]
 
 MIDDLEWARE = [

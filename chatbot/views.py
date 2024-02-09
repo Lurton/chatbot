@@ -4,7 +4,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .models import User, Log
-from .serializers import UserSerializer, LogSerializer
+from .serializers import LogSerializer
 from .utilities import get_ending_response, get_greeting_response, get_question_response
 
 
@@ -36,7 +36,6 @@ class ChatbotView(APIView):
         user.save()
 
         log = Log.objects.create(user=user, input=input, response=response)
-        log_serialized = {"input": log.input, "response": log.response}
 
         serializer = LogSerializer(log)
         return Response(serializer.data, status=status.HTTP_200_OK)

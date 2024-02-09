@@ -1,0 +1,15 @@
+[run]
+data_file = .coverage/.coverage
+omit =
+    */tests/*
+    */migrations/*
+
+[report]
+skip_covered = True
+
+[html]
+title = Test Coverage | chatbot
+directory = .coverage
+
+[json]
+pretty_print = True
