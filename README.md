@@ -24,3 +24,4 @@
 # Please note that I tried posting using curl but it was not working on my cmd, not sure what's changed with it.
 
 # To run tests run the following command: pipenv run coverage run manage.py test -v 2
+# The end
